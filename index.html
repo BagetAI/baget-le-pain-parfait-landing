@@ -1,241 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Le Pain Parfait - Authentic French Boulangerie</title>
-    <meta name="description" content="Le Pain Parfait - Fresh artisanal French breads, pastries & specialty baked goods. Visit us for tradition and quality in every bite." />
-    <meta name="keywords" content="French bakery, artisanal bread, pastries, boulangerie, fresh bread, Le Pain Parfait, bakery near me" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
-    <style>
-        /* Reset and base styles */
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #F5F1E9;
-            color: #2B2A29;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            margin: 0 0 0.5em;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem 0;
-        }
-        /* Header */
-        header {
-            background-color: #D9A441;
-            padding: 1rem 0;
-            text-align: center;
-            color: #F5F1E9;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-        header p {
-            font-style: italic;
-        }
-        /* Main sections */
-        section {
-            padding: 2rem 0;
-        }
-        .offerings {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .product {
-            background: #FFF;
-            border: 1px solid #EDE6D6;
-            border-radius: 8px;
-            width: 250px;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-            object-fit: cover;
-            margin-bottom: 0.5rem;
-        }
-        .product h3 {
-            color: #6B4C3B;
-            font-weight: 600;
-            font-size: 1.25rem;
-            margin-bottom: 0.25rem;
-        }
-        .product p {
-            font-size: 0.9rem;
-            color: #556B2F;
-        }
-        /* Hours & location styling */
-        .hours-location {
-            background-color: #EDE6D6;
-            border-radius: 10px;
-            padding: 1rem;
-            box-shadow: inset 0 0 5px #C9754B;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .hours-location h2 {
-            color: #6B4C3B;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-        }
-        .hours-location p {
-            margin: 0.25rem 0;
-            font-weight: 500;
-        }
-        /* Contact form simple styling */
-        form {
-            background: #FFF;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: 1rem auto;
-            padding: 1rem;
-            box-shadow: 0 2px 7px rgba(0,0,0,0.1);
-        }
-        form label {
-            display: block;
-            margin-bottom: 0.25rem;
-            font-weight: 600;
-            color: #6B4C3B;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #D9A441;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-        }
-        form button {
-            background-color: #D9A441;
-            color: #F5F1E9;
-            font-weight: bold;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        form button:hover {
-            background-color: #C9754B;
-        }
-        /* Footer */
-        footer {
-            background-color: #6B4C3B;
-            color: #F5F1E9;
-            text-align: center;
-            padding: 1rem 0;
-            font-size: 0.875rem;
-            margin-top: 2rem;
-        }
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            .offerings {
-                flex-direction: column;
-                align-items: center;
-            }
-            .product {
-                width: 90%;
-            }
-            .hours-location {
-                max-width: 100%;
-            }
-            form {
-                width: 90%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Pain Parfait - Boulangerie Artisanale</title>
+  <meta name="description" content="Le Pain Parfait, votre boulangerie artisanale locale. Découvrez nos pains frais, pâtisseries, horaires et contactez-nous facilement." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #F5F1E9;
+      color: #2B2A29;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a {
+      color: #D9A441;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #6B4C3B;
+      color: #F5F1E9;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #6B4C3B;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #D9A441;
+      padding-bottom: 0.25rem;
+      width: fit-content;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(107,76,59,0.15);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(107,76,59,0.25);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #D9A441;
+    }
+    .product-content {
+      padding: 1rem;
+    }
+    .product-content h3 {
+      font-family: 'Playfair Display', serif;
+      color: #6B4C3B;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .product-content p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .hours-contact {
+      background: #FFF;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(107,76,59,0.15);
+      padding: 1.4rem 2rem;
+      max-width: 400px;
+      margin: 0 auto;
+      font-weight: 600;
+      color: #6B4C3B;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #FFF;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(107,76,59,0.15);
+      padding: 1.5rem 2rem;
+      font-weight: 600;
+      color: #6B4C3B;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+      color: #6B4C3B;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 2px solid #D9A441;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      resize: vertical;
+    }
+    .contact-form button {
+      background-color: #D9A441;
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.2s ease;
+    }
+    .contact-form button:hover {
+      background-color: #b78834;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      color: #8D8A85;
+      background: #EDE6D6;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+      .hours-contact, .contact-form {
+        max-width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Le Pain Parfait</h1>
-        <p>Tradition in Every Bite</p>
-    </header>
+  <header>
+    <h1>Le Pain Parfait</h1>
+    <nav>
+      <a href="#products">Nos Produits</a>
+      <a href="#hours">Horaires & Contact</a>
+      <a href="#contact">Nous Contacter</a>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" aria-label="Présentation de la boulangerie">
+      <h2>Bienvenue chez Le Pain Parfait</h2>
+      <p>Découvrez l'authenticité de la boulangerie artisanale française, des pains frais, pâtisseries et douceurs préparés avec passion chaque jour.</p>
+    </section>
 
-    <main class="container">
-        <section aria-label="Bakery offerings">
-            <h2>Our Specialties</h2>
-            <div class="offerings">
-                <article class="product">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Fresh baguette" />
-                    <h3>Classic Baguette</h3>
-                    <p>Traditional French bread with a crispy crust and tender crumb.</p>
-                </article>
-                <article class="product">
-                    <img src="https://images.unsplash.com/photo-1559561853-7f9bd8b39eb6?auto=format&fit=crop&w=400&q=80" alt="Assorted pastries" />
-                    <h3>Pastry Selection</h3>
-                    <p>Butter croissants, pain au chocolat, almond tarts and more.</p>
-                </article>
-                <article class="product">
-                    <img src="https://images.unsplash.com/photo-1615225407530-cea2c3691b52?auto=format&fit=crop&w=400&q=80" alt="Specialty breads" />
-                    <h3>Artisanal Breads</h3>
-                    <p>Whole grain, sourdough, and specialty loaves crafted with care.</p>
-                </article>
-                <article class="product">
-                    <img src="https://images.unsplash.com/photo-1563805042-7684e65e3e9d?auto=format&fit=crop&w=400&q=80" alt="Gluten-free baked goods" />
-                    <h3>Gluten-Free & Vegan</h3>
-                    <p>Delicious options catering to health-conscious and dietary needs.</p>
-                </article>
-            </div>
-        </section>
+    <section id="products" aria-label="Nos produits de boulangerie">
+      <h2>Nos Produits</h2>
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1542838687-378a8de8426e?auto=format&fit=crop&w=600&q=80" alt="Baguette traditionnelle fraîche" />
+          <div class="product-content">
+            <h3>Baguettes Traditionnelles</h3>
+            <p>Un classique français, croustillante à l’extérieur, moelleuse à l’intérieur.</p>
+          </div>
+        </article>
 
-        <section aria-label="Opening hours and location">
-            <h2>Visit Us</h2>
-            <div class="hours-location">
-                <h3>Opening Hours</h3>
-                <p>Mon - Fri: 7:00 AM – 7:00 PM</p>
-                <p>Sat - Sun: 8:00 AM – 5:00 PM</p>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80" alt="Assortiment de pâtisseries artisanales" />
+          <div class="product-content">
+            <h3>Pâtisseries Artisanales</h3>
+            <p>Croissants, éclairs, et douceurs préparés chaque matin pour éveiller vos papilles.</p>
+          </div>
+        </article>
 
-                <h3>Location</h3>
-                <p>123 Rue de la Boulangerie, Paris, 75001</p>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80" alt="Pain bio et spécialités santé" />
+          <div class="product-content">
+            <h3>Pains Spécialités et Bio</h3>
+            <p>Options saines, bio et adaptées aux régimes spécifiques comme le sans gluten.</p>
+          </div>
+        </article>
 
-                <h3>Contact</h3>
-                <p>Phone: +33 1 23 45 67 89</p>
-                <p>Email: contact@lepainparfait.fr</p>
-            </div>
-        </section>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1589710757527-1d8eb7d467c3?auto=format&fit=crop&w=600&q=80" alt="Commande en gros pour entreprises" />
+          <div class="product-content">
+            <h3>Commandes en Gros</h3>
+            <p>Service dédié aux entreprises, événements, et réceptions avec un large choix.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section aria-label="Contact form">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required />
+    <section id="hours" aria-label="Horaires d'ouverture et contact">
+      <h2>Horaires & Contact</h2>
+      <div class="hours-contact">
+        <p><strong>Adresse:</strong> 12 Rue des Artisans, 75011 Paris, France</p>
+        <p><strong>Horaires d'ouverture:</strong></p>
+        <ul>
+          <li>Lundi - Vendredi: 7h00 - 19h00</li>
+          <li>Samedi: 7h30 - 18h00</li>
+          <li>Dimanche: Fermé</li>
+        </ul>
+        <p><strong>Téléphone:</strong> <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+      </div>
+    </section>
 
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required />
+    <section id="contact" aria-label="Formulaire de contact">
+      <h2>Nous Contacter</h2>
+      <form class="contact-form" id="contactForm" aria-describedby="contactDescription">
+        <div id="contactDescription" class="sr-only">Formulaire pour envoyer un message à Le Pain Parfait</div>
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="name" required placeholder="Votre nom" aria-required="true" />
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" required placeholder="votre.email@example.com" aria-required="true" />
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Votre message..." aria-required="true"></textarea>
 
-    <footer>
-        &copy; 2024 Le Pain Parfait. All rights reserved.
-    </footer>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
 
-    <script>
-        const form = document.getElementById('contact-form');
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            alert('Thank you for reaching out! We will get back to you soon.');
-            form.reset();
-        });
-    </script>
+  <footer>
+    <p>© 2024 Le Pain Parfait - Boulangerie Artisanale. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Simple client-side form submission demo
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+
+      if (!name || !email || !message) {
+        alert('Veuillez remplir tous les champs du formulaire.');
+        return;
+      }
+
+      // Mock submission - Replace with actual API integration in production
+      alert('Merci, ' + name + '! Votre message a bien été envoyé. Nous vous répondrons bientôt.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
